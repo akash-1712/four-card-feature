@@ -1,0 +1,71 @@
+.card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 22rem;
+  text-align: left;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.486);
+  border-radius: 8px;
+  // transform: scale(0.9);
+  transition: all 0.2s;
+  &:hover {
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.586);
+  }
+
+  &-title {
+    align-self: flex-start;
+  }
+  &-quote {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $Grayish-Blue;
+    align-self: flex-start;
+  }
+
+  &-image {
+    width: 6rem;
+    height: 6rem;
+    align-self: flex-end;
+    margin-right: 1rem;
+
+    @media only screen and (max-width: 28.125em) {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+    @media only screen and (max-width: 25.725em) {
+      align-self: center;
+    }
+  }
+}
+.supervisor {
+  grid-area: aa;
+  align-self: center;
+  border-top: 4px solid $Cyan;
+  @media only screen and (max-width: 78.125em) {
+    grid-area: auto;
+  }
+}
+.builder {
+  grid-area: bb;
+  border-top: 4px solid $Red;
+  @media only screen and (max-width: 78.125em) {
+    grid-area: auto;
+  }
+}
+.karma {
+  grid-area: dd;
+  border-top: 4px solid $Orange;
+  @media only screen and (max-width: 78.125em) {
+    grid-area: auto;
+  }
+}
+.calculator {
+  grid-area: cc;
+  border-top: 4px solid $Blue;
+  align-self: center;
+  @media only screen and (max-width: 78.125em) {
+    grid-area: auto;
+  }
+}
